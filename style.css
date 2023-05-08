@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono:wght@400;700&display=swap');
+
+html {
+    font-family: 'Ubuntu Mono', monospace;
+}
+body {
+    background-image: url("2374544.png");
+    background-size: cover;
+    color: rgb(51, 51, 124);
+}
+.container {
+    overflow-x: auto;
+    padding: 30px;
+    max-width: 1550px;
+    margin: 30px auto;
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.308);
+    font-size: 0.8rem;
+    background-color: rgba(255, 255, 255, 0.795);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    
+}
+.titulo {
+    font-size: 1.5rem;
+    margin-top: -15px;
+}
+table {
+    width: 100%;
+    margin: auto;
+    max-width: 1500px;
+}
+
+
+td {
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+    box-shadow: inset 0 0 15px rgba(0, 0, 0, 0.329);
+}
+
+td:hover {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.3);
+    box-shadow: 0px 0px 30px 20px rgba(241, 245, 0, 0.788);
+    border-radius: 5px; 
+}
+.table-head {
+    display: none;
+}
+
+.celula-invisivel {
+    border: none;
+    visibility: hidden;
+}
+.materiais-alcalinos {
+    background-color: #ea5b5d
+}
+.materiais-alcalinos-terrosos {
+    background-color: #f69453
+}
+.materiais-transicao {
+    background-color: #ffcd54
+}
+.materiais-transicao:hover{
+    -webkit-transform: scale(1.1);
+    transform: scale(1.3);
+    box-shadow: 0px 0px 30px 10px rgba(255, 77, 240, 0.842);
+    border-radius: 5px;
+}
+.materiais-representativos {
+    background-color: #6090f4
+}
+.semi-metais {
+    background-color: #73e4ce
+}
+.nao-metais {
+    background-color: #d86be0
+}
+.halogenios {
+    background-color: hsl(269, 62%, 62%);
+}
+.gases-nobres {
+    background-color: hsl(148.85deg 50.98% 40%);
+}
+.lantanideos {
+    background-color: #6ede70
+}
+.actinideos {
+    background-color: hsl(319, 91%, 66%);
+}
+
+.celula {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    border: none;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.329);
+    border-radius: 5px;
+}
+
+.numero-atomico {
+    padding: 3px;
+    margin-left: -5px;
+}
+.celula:hover {
+    background-color: aquamarine;
+    text-shadow: 5px 5px 5px #1818189c;
+    box-shadow: 50px 50px 7px rgba(0, 0, 0, 0.315);
+    
+}
+.elemento {
+    display: flex;
+    flex-direction: column;
+    color: rgb(45, 45, 90);    
+    width: 80%;
+    
+}
+.elemento-central {
+    display: flex;
+}
+.simbolo {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 600;
+    padding: 5px 5px 0px 5px;
+}
+
+.legenda {
+    display: flex;
+    position: absolute;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.315);
+    top: 200px;
+    left: 280px;
+    width: 682px;
+    border-radius: 8px;
+    height: 125px;
+    justify-content:space-evenly;
+    align-items: center;
+    background-image: url(legenda\ trabalho\ front.png);
+    background-size: cover;
+    background-size: 90%;
+    background-repeat: no-repeat;
+    background-position: 20px;
+    
+}
+
+.legenda:hover {
+    box-shadow: 0 0 10px 1000px rgba(114, 114, 114, 0.637);
+}
+.nome {
+    font-size: 0.6rem;
+    text-align: center;
+}
+.dist-eletronica {
+    padding: 3px;
+    visibility: hidden;
+}
+.massa-atomica{
+    text-align: center;
+}
+
+.modal-elemento {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.75);
+    display: none;
+}
+
+.modal-conteudo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 600px;
+    padding: 20px;
+    background: #eee;
+    line-height: 25px;
+}
+.modal-conteudo h3 {
+    margin: 3px;
+}
+a.fechar-modal {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 1.5rem;
+    text-decoration: none;
+}
+.modal-elemento:target {
+    display: block;
+}
+a {
+    text-decoration: none;
+}
+
+.naoSelecionavel {
+    -webkit-touch-callout: none;  /* iPhone OS, Safari */
+    -webkit-user-select: none;    /* Chrome, Safari 3 */
+    -khtml-user-select: none;     /* Safari 2 */
+    -moz-user-select: none;       /* Firefox */
+    -ms-user-select: none;        /* IE10+ */
+    user-select: none;            /* Possível implementação no futuro */
+    /* cursor: default; */
+}
